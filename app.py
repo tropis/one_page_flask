@@ -9,7 +9,7 @@ from flask import Flask, send_from_directory, json
 from string import Template
 
 app = Flask(__name__)
-MINI = False
+MINI = True
 
 @app.route('/')
 def ix():
@@ -149,6 +149,7 @@ MINI_TEMPLATE = """<!DOCTYPE html>
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
+
           <div class="navbar-brand">
             <a class="navbar-item" href="/">
               <h1 class="title is-6">
@@ -158,12 +159,14 @@ MINI_TEMPLATE = """<!DOCTYPE html>
                 ONE PAGE FLASK
               </h1>
             </a>
+
             <span class="navbar-burger burger" data-target="navbarMenuHeroA">
             <span></span>
             <span></span>
             <span></span>
             </span>
           </div>
+
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
               <a class="navbar-item $SIZES_ACTIVE" href="/sizes">
@@ -174,6 +177,7 @@ MINI_TEMPLATE = """<!DOCTYPE html>
               </a>
             </div>
           </div>
+
         </div>
       </nav>
     </div>
