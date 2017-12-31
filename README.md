@@ -17,6 +17,6 @@ python flask_one_page.py
 ```
 Point browser to http://127.0.0.1:5000
 
-## Discussion
+## Discussion, Contact
 
 [PhilHardker.com](https://philhardaker.com/projects/one_page_flask)
